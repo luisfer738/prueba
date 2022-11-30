@@ -1,0 +1,86 @@
+@tailwind components;
+@layer components {
+
+    .SidebarDivPrimary {
+        @apply
+        hidden
+        sm:flex
+        flex-col
+        p-2 
+        xl:items-start 
+        fixed
+        h-full
+        
+    }
+
+    /* Styles the SideBarMenuItems*/
+    .DivPrimaryMenuItems {
+        @apply 
+        flex
+        items-center
+        justify-center
+        transition duration-500 ease-out
+        sm:pl-2
+        text-green-700
+        sm:justify-start
+        text-2xl
+        lg:text-xl 
+        xl:text-2xl
+        px-2
+        space-x-3
+        cursor-pointer
+        hover:bg-green-50
+        hover:scale-110
+        hover:brightness-125
+        rounded-full 
+        w-[50px]
+        h-[50px]
+        lg:w-auto
+        
+    }
+    .DivProfileSection {
+        @apply
+        flex
+        text-green-700
+        justify-center
+        
+        items-center
+        lg:justify-start
+       mt-6
+       cursor-pointer
+       hover:bg-green-50
+       hover:brightness-125
+       rounded-full
+
+    }
+    .SearchEfect {
+        @apply
+        rounded-full
+        absolute 
+        blur-sm
+         inset-1 
+         bg-gradient-to-r 
+         from-gradienpri 
+         to-botton 
+         opacity-75 
+         group-hover:opacity-100 
+         transition duration-1000 
+         group-hover:duration-200 
+         animate-tilt
+    }
+    .Imput {
+        @apply
+        absolute 
+        inset-0 
+        rounded-full 
+        pl-11
+         border-green-700 
+         focus:shadow-lg
+          focus:bg-white
+           bg-green-100
+            text-green-700 
+            focus:outline-none
+         focus:border-green-500
+
+    }
+}
